@@ -1,10 +1,20 @@
 pipeline{
     agent any
     // all jobs will be running om jenkins-slave
+    
     environment {
         MAX_SIZE = 100
         MIN_SIZE = 10
     }
+    options {
+        buildDiscarder(logRotator(daysToKeepStr: '10', numToKeepStr: '10'))
+        timeout(time: 12, unit: 'HOURS')
+        timestamps()
+    }
+    triggers {
+        cron '@midnight'
+    }
+    
     parameters {
         choice ( name: 'Environment', 
             choices: ['production', 'development','staging'],
