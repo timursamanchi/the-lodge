@@ -1,3 +1,4 @@
+[![Build Status](http://ec2-3-253-60-228.eu-west-1.compute.amazonaws.com/buildStatus/icon?job=parameterized-pipeline)](http://ec2-54-76-125-146.eu-west-1.compute.amazonaws.com/job/parameterized-pipeline/) 
 # @the-lodge
 
 Jenkins Github-webhook test
