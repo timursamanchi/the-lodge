@@ -17,6 +17,10 @@ configurations needs to be done on the jenkins server pipeline job side and on g
     NOTE: The project must run at least one successful build before connecting to GitHub. This allows Jenkins to read the configuration from the repo
 
 ### 2) github repo configuration
+- Copy the URL of your Jenkins server (right click on the jenkins logo)  
+- Select Settings → Webhooks → Add webhook  
+
+
 
 
 
